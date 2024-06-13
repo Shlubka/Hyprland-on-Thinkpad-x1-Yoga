@@ -15,3 +15,7 @@ By default, the brightness and volume buttons do not work, so it was decided to 
 
 For audio output, pipwere is used. The following binds were used for the volume keys: 
 (showing an example)
+
+
+Для разблокировки по лицу нужно установить пакет howdy `https://github.com/boltgolt/howdy`
+Если столкнулись с пролемой установки python-dlib сделать следуюшее:
