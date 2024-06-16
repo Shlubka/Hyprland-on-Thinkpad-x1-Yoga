@@ -21,3 +21,5 @@ For audio output, pipwere is used. The following binds were used for the volume 
 Если столкнулись с пролемой установки python-dlib сделать следуюшее:
 1) Добавить репозиторий arch4edu `https://github.com/arch4edu/arch4edu`
 2) pacman -Syu python-dlib
+
+Также для коректной работы надо установиь linux-enable-ir-emitter: `yay linux-enable-ir-emitter`
