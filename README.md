@@ -19,3 +19,5 @@ For audio output, pipwere is used. The following binds were used for the volume 
 
 Для разблокировки по лицу нужно установить пакет howdy `https://github.com/boltgolt/howdy`
 Если столкнулись с пролемой установки python-dlib сделать следуюшее:
+1) Добавить репозиторий arch4edu `https://github.com/arch4edu/arch4edu`
+2) pacman -Syu python-dlib
