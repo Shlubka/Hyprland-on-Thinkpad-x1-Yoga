@@ -22,4 +22,6 @@ For audio output, pipwere is used. The following binds were used for the volume 
 1) Добавить репозиторий arch4edu `https://github.com/arch4edu/arch4edu`
 2) pacman -Syu python-dlib
 
+Howdy currently work whith python-numpy 1.26 `https://archive.archlinux.org/packages/p/python-numpy/python-numpy-1.26.4-2-x86_64.pkg.tar.zst`
+
 Также для коректной работы надо установиь linux-enable-ir-emitter: `yay linux-enable-ir-emitter`
