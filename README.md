@@ -12,6 +12,8 @@ When creating the environment, I was inspired by windows and kde
 
 By default, the brightness and volume buttons do not work, so it was decided to bind them using the light program like this: 
 (showing an example)
+Or you can use wluma `https://github.com/maximbaz/wluma`
+For all this prog u need add user to video group sudo usermod -aG video kira
 
 For audio output, pipwere is used. The following binds were used for the volume keys: 
 (showing an example)
