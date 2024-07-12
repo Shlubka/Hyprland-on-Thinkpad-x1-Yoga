@@ -27,3 +27,5 @@ Howdy currently work whith python-numpy 1.26 `https://archive.archlinux.org/pack
 Также для коректной работы надо установиь linux-enable-ir-emitter: `yay linux-enable-ir-emitter`
 Крайне рекомендую использовать howdy-beta-git. Эта версия создает меньше всего проблем.
 Если хотите запустить `howdy test`, лучше всего сделать это в окружении X11
+
+for screen rotation like windows was writen script scrrt.sh. Also we need some waybars in tablet mode. In this script i kill 1 waybar and lauch 2, and back
