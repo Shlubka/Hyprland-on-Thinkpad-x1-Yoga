@@ -1,0 +1,162 @@
+{
+  "height":0,
+  "width":0,
+  "modules-left":[
+    "clock",
+    "hyprland/language",
+    "power-profiles-daemon",
+    "battery"
+  ],
+  "modules-center":[
+    "hyprland/workspaces"
+  ],
+  "modules-right":[
+    "network",
+    "cpu",
+    "temperature",
+    "memory",
+    "pulseaudio",
+    "bluetooth",
+    "custom/pm"
+  ],
+
+  "cpu":{
+    "format":"{usage}% ",
+    "interval":1
+  },
+
+  "memory":{
+    "format":" {}%",
+    "interval":1
+  },
+
+  "temperature":{
+    "critical-threshold":80,
+    "format":"{temperatureC}°C {icon}",
+    "format-icons":["","",""],
+    "interval":1
+  },
+
+  "battery":{
+    "states":{
+      "warning":20,
+      "critical":10
+    },
+    "format":"{capacity}% {icon}",
+    "format-charging":"{capacity}%",
+    "format-plugged":"{capacity}%",
+    "format-alt":"{icon} {time}",
+    "format-icons":["","","","",""],
+    "interval":1
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+
+  "network":{
+    "format-wifi":"{bandwidthDownBytes}  ,{bandwidthUpBytes}  ",
+    "format-ethernet":"{ipaddr}/{cidr}",
+    "tooltip-format":"{ifname}via{gwaddr}",
+    "format-linked":"{ifname}(NoIP)",
+    "format-disconnected":"",
+    "format-alt":"{ifname}:{essid}{ipaddr}/{cidr}",
+    "interval":1
+  },
+
+  "clock":{
+    "format":"{:%H:%M:%S}",
+    "interval":1,
+    "tooltip-format":"<big>{:%Y%B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt":"{:%Y-%m-%d}"
+  },
+
+  "pulseaudio":{
+    "format":"{volume}% {icon}{format_source}",
+    "format-bluetooth":"{volume}% {icon}  {format_source}",
+    "format-bluetooth-muted":" {icon}  {format_source}",
+    "format-muted":"{format_source}",
+    "format-source":"{volume}%",
+    "format-source-muted":"",
+    "format-icons":{
+      "headphone":"",
+      "hands-free":"",
+      "headset":"",
+      "phone":"",
+      "portable":"",
+      "car":"",
+      "default":["","",""]
+    },
+    "on-click":"pavucontrol"
+  },
+
+/*  "hyprland/workspaces":{
+    "format":"{icon}",
+    "on-scroll-up":"hyprctldispatchworkspacee+1",
+    "on-scroll-down":"hyprctldispatchworkspacee-1",
+    "on-click":"activate",
+    "all-outputs":true,
+    "format-icons":{
+      "1":"",
+      "2":"",
+      "3":"",
+      "4":"",
+      "5":"",
+      "6":"",
+      "7":"",
+      "8":"",
+      "9":"",
+      "10":""
+    },
+    "sort-by-number":true
+  },*/
+
+  	"hyprland/workspaces": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+			"urgent": "",
+			"active": "",
+			"default": ""
+			},
+		"tooltip": false,
+    "persistent-workspaces": {"*": 5}
+	},
+
+
+  "custom/pm":{
+    "format":"",
+    "on-click":"wlogout"
+  },
+
+  "hyprland/window":{
+    "format":"{}",
+    "separate-outputs":false,
+    "max-length":20
+  },
+
+  "hyprland/language":{
+    "format-en":"US",
+    "format-ru":"RU",
+  },
+
+  "bluetooth": {
+    "format": " {status}",
+    "format-connected": " {device_alias}",
+    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click":"blueman-manager"
+  }
+}
+
